@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LearningCenter.Infra.Domain
 {
-    internal class Technology
+    public class Technology
     {
     }
 }
