@@ -13,16 +13,18 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Configuration\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\LearningCenter.Core.Builder\LearningCenter.Core.Builder.csproj" />
+    <ProjectReference Include="..\LearningCenter.Core.Contract\LearningCenter.Core.Contract.csproj" />
+    <ProjectReference Include="..\LearningCenter.Core.Domain\LearningCenter.Core.Domain.csproj" />
+    <ProjectReference Include="..\LearningCenter.Core.Service\LearningCenter.Core.Service.csproj" />
+    <ProjectReference Include="..\LearningCenter.Infra.Contract\LearningCenter.Infra.Contract.csproj" />
     <ProjectReference Include="..\LearningCenter.Infra.Domain\LearningCenter.Infra.Domain.csproj" />
+    <ProjectReference Include="..\LearningCenter.Infra.Repesitory\LearningCenter.Infra.Repository.csproj" />
   </ItemGroup>
 
 </Project>

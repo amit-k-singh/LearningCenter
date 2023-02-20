@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LearningCenter.Infra.Domain.Entities
 {
-    public class UserRoles
+    public class Role
     {
         public int Id { get; set; }
         public string Name { get; set; }

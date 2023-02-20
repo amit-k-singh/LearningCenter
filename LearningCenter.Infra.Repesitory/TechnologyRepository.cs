@@ -15,7 +15,7 @@ namespace LearningCenter.Infra.Repository
 
         public async Task<int> AddTechnology(Technology tech)
         {
-            await _myDbContext.technologie.AddAsync(tech);
+            await _myDbContext.Technology.AddAsync(tech);
             return await _myDbContext.SaveChangesAsync();
         }
     }
