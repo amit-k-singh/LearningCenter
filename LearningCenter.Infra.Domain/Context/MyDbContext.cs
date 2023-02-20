@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace LearningCenter.Infra.Domain.Context
 {
     public class MyDbContext : DbContext
@@ -13,7 +14,6 @@ namespace LearningCenter.Infra.Domain.Context
         public MyDbContext(DbContextOptions options) : base(options)
         {
         }
-
         public DbSet<Users> Users { get; set; }
         public DbSet<UserRoles> UserRoles { get; set; }
         public DbSet<Technology> Technology { get; set; }
