@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningCenter.Infra.Domain
+namespace LearningCenter.Infra.Domain;
+
+public class UserRoles
 {
-    internal class UserRoles
-    {
-    }
+
 }
