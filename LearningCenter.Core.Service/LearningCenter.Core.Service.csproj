@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LearningCenter.Core.Builder\LearningCenter.Core.Builder.csproj" />
+    <ProjectReference Include="..\LearningCenter.Core.Contract\LearningCenter.Core.Contract.csproj" />
+    <ProjectReference Include="..\LearningCenter.Core.Domain\LearningCenter.Core.Domain.csproj" />
+    <ProjectReference Include="..\LearningCenter.Infra.Contract\LearningCenter.Infra.Contract.csproj" />
+    <ProjectReference Include="..\LearningCenter.Infra.Repesitory\LearningCenter.Infra.Repository.csproj" />
+  </ItemGroup>
+
 </Project>

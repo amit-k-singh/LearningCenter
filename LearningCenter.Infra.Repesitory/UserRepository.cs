@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LearningCenter.Infra.Repesitory;
 
-public class UserRepository
+public class UserRepository : IUserRepository
 {
     private readonly MyDbContext _myDbContext;
 
@@ -17,7 +17,7 @@ public class UserRepository
         _myDbContext = myDbContext;
     }
 
-    public async Task<int> AddUser(Users users)
+    public async Task<int> AddUser(User users)
     {
         await _myDbContext.Users.AddAsync(users);
         return await _myDbContext.SaveChangesAsync();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LearningCenter.Infra.Domain.Entities
 {
-    public class Users
+    public class User
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -16,5 +16,21 @@ namespace LearningCenter.Infra.Domain.Entities
         public string Address { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        
+        public User() 
+        {
+            
+        }
+        public User(string name, DateTime dob, int age, long phone, string address, string email, string password)
+        {
+            Name = name;
+            Dob = dob;
+            Age = age;
+            Phone = phone;
+            Address = address;
+            Email = email;
+            Password = password;
+        }
     }
+
 }
