@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningCenter.Infra.Domain
+namespace LearningCenter.Infra.Domain.Entities
 {
     public class Users
     {
@@ -16,6 +16,5 @@ namespace LearningCenter.Infra.Domain
         public string Address { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-
     }
 }

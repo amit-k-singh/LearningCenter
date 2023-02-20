@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Infra.Contra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Infra.Domain", "LearningCenter.Infra.Domain\LearningCenter.Infra.Domain.csproj", "{D09A4873-10FC-493B-A70A-C9CCD800CE13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Infra.Repesitory", "LearningCenter.Infra.Repesitory\LearningCenter.Infra.Repesitory.csproj", "{433FFDEA-2505-41B3-8B42-865F110A551E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Infra.Repository", "LearningCenter.Infra.Repesitory\LearningCenter.Infra.Repository.csproj", "{433FFDEA-2505-41B3-8B42-865F110A551E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
