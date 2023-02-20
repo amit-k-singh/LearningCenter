@@ -1,5 +1,11 @@
 ﻿using LearningCenter.Infra.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 
 namespace LearningCenter.Infra.Domain.Context
 {
@@ -8,8 +14,8 @@ namespace LearningCenter.Infra.Domain.Context
         public MyDbContext(DbContextOptions options) : base(options)
         {
         }
-
-        public DbSet<Technology> technologie { get; set; }
-        public DbSet<UserRoles> userRoles { get; set; }
+        public DbSet<Users> Users { get; set; }
+        public DbSet<UserRoles> UserRoles { get; set; }
+        public DbSet<Technology> Technology { get; set; }
     }
 }
