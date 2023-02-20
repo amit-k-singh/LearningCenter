@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter", "LearningCenter\LearningCenter.csproj", "{4561E276-2C29-4F60-9170-D7C9F1A649E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearningCenter", "LearningCenter\LearningCenter.csproj", "{4561E276-2C29-4F60-9170-D7C9F1A649E2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{7241ED2F-CBF7-4084-9645-89BE0A49B118}"
 EndProject
@@ -11,19 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D53EE598-A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{82DFC025-DD50-461C-A53A-16EAA10C0527}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Core.Builder", "LearningCenter.Core.Builder\LearningCenter.Core.Builder.csproj", "{6D147B4D-CC64-4B13-B6B9-E3FCB2539F24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearningCenter.Core.Builder", "LearningCenter.Core.Builder\LearningCenter.Core.Builder.csproj", "{6D147B4D-CC64-4B13-B6B9-E3FCB2539F24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Core.Contract", "LearningCenter.Core.Contract\LearningCenter.Core.Contract.csproj", "{8AD384EE-5BC0-4ABA-B74C-6D6538A6DFF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearningCenter.Core.Contract", "LearningCenter.Core.Contract\LearningCenter.Core.Contract.csproj", "{8AD384EE-5BC0-4ABA-B74C-6D6538A6DFF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Core.Domain", "LearningCenter.Core.Domain\LearningCenter.Core.Domain.csproj", "{491AED3D-8B7C-4D55-9E17-0BEF86513D69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearningCenter.Core.Domain", "LearningCenter.Core.Domain\LearningCenter.Core.Domain.csproj", "{491AED3D-8B7C-4D55-9E17-0BEF86513D69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Core.Service", "LearningCenter.Core.Service\LearningCenter.Core.Service.csproj", "{349739B8-AED6-4805-91D8-862627D08946}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearningCenter.Core.Service", "LearningCenter.Core.Service\LearningCenter.Core.Service.csproj", "{349739B8-AED6-4805-91D8-862627D08946}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Infra.Contract", "LearningCenter.Infra.Contract\LearningCenter.Infra.Contract.csproj", "{D7057497-10E8-4365-83E5-C6F172279C98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearningCenter.Infra.Contract", "LearningCenter.Infra.Contract\LearningCenter.Infra.Contract.csproj", "{D7057497-10E8-4365-83E5-C6F172279C98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Infra.Domain", "LearningCenter.Infra.Domain\LearningCenter.Infra.Domain.csproj", "{D09A4873-10FC-493B-A70A-C9CCD800CE13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearningCenter.Infra.Domain", "LearningCenter.Infra.Domain\LearningCenter.Infra.Domain.csproj", "{D09A4873-10FC-493B-A70A-C9CCD800CE13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Infra.Repesitory", "LearningCenter.Infra.Repesitory\LearningCenter.Infra.Repesitory.csproj", "{433FFDEA-2505-41B3-8B42-865F110A551E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearningCenter.Infra.Repository", "LearningCenter.Infra.Repesitory\LearningCenter.Infra.Repository.csproj", "{433FFDEA-2505-41B3-8B42-865F110A551E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

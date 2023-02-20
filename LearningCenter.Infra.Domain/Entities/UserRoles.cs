@@ -1,5 +1,4 @@
-
-﻿namespace LearningCenter.Infra.Domain;
+namespace LearningCenter.Infra.Domain.Entities;
 
 public class UserRoles
 {
