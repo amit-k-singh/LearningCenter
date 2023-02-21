@@ -10,9 +10,9 @@ namespace LearningCenter.Core.Builder
 {
     public class UserBuilder
     {
-        public static User Build(UserRequestModel user)
+        public static User Build(UserRequestModel user, int age)
         {
-            return new User(user.Name, user.Dob, user.Age, user.Phone, user.Address, user.Email, user.Password);
+            return new User(user.Name, user.Dob, age, user.Phone, user.Address, user.Email, user.Password);
         }
     }
 }
