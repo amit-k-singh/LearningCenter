@@ -14,8 +14,8 @@ namespace LearningCenter.Infra.Domain.Context
         public MyDbContext(DbContextOptions options) : base(options)
         {
         }
-        public DbSet<User> Users { get; set; }
-        public DbSet<Role> UserRoles { get; set; }
+        public DbSet<User> User { get; set; }
+        public DbSet<Role> Role { get; set; }
         public DbSet<Technology> Technology { get; set; }
     }
 }

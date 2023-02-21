@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\LearningCenter.Core.Builder\LearningCenter.Core.Builder.csproj" />
     <ProjectReference Include="..\LearningCenter.Core.Contract\LearningCenter.Core.Contract.csproj" />
     <ProjectReference Include="..\LearningCenter.Core.Domain\LearningCenter.Core.Domain.csproj" />

@@ -1,9 +1,5 @@
 ﻿using LearningCenter.Core.Contract;
 using LearningCenter.Core.Domain.RequestModel;
-using LearningCenter.Core.Service;
-using LearningCenter.Infra.Repesitory;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LearningCenter.Controllers
@@ -19,11 +15,39 @@ namespace LearningCenter.Controllers
             _userService = userService;
         }
 
-        [HttpPost]
+        [HttpGet("get-users")]
+        public async Task<IActionResult> GetAllUser()
+        {
+            var users = await _userService.GetUserAsync();
+            return Ok(users);
+        }
+
+        [HttpGet("get-user/{id}")]
+        public async Task<IActionResult> GetUser(int id)
+        {
+            var user = await _userService.GetUserByIdAsync(id); 
+            return Ok(user);
+        }
+
+        [HttpPost("add-user")]
         public async Task<IActionResult> Post(UserRequestModel userRequestModel)
         {
-            var result = _userService.AddUserAsync(userRequestModel);
-            return Ok(result);
+            await _userService.AddUserAsync(userRequestModel);
+            return Ok("User added successfully...");
+        }
+
+        [HttpPut("update-user/{id}")]
+        public async Task<IActionResult> Put(int id, UserRequestModel userRequestModel)
+        {
+            await _userService.UpdateUserAsync(userRequestModel, id);
+            return Ok("User updated Successfully...");
+        }
+
+        [HttpDelete("delete-user/{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _userService.DeleteUserAsync(id);
+            return Ok("Deleted successfully...!!!");
         }
     }
 }
