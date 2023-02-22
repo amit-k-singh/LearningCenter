@@ -20,6 +20,11 @@ namespace LearningCenter.Core.Service
 
         public async Task<int> AddRoleAsync(RoleRequestModel roleRequestModel)
         {
+            var isExiest = await _roleRepository.GetRoleByName(roleRequestModel.Name);
+            if (isExiest != null)
+            {
+                throw new Exception("User already exiest...");
+            }
             var role = RoleBuilder.Build(roleRequestModel);
             var result = await _roleRepository.AddRole(role);
             if (result == 0)

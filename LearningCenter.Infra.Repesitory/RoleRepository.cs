@@ -7,40 +7,46 @@ namespace LearningCenter.Infra.Repository
 {
     public class RoleRepository : IRoleRepository
     {
-        private readonly MyDbContext _myDbContext;
+        private readonly LearningCenterContext _learningCenterContext;
 
-        public RoleRepository(MyDbContext myDbContext)
+        public RoleRepository(LearningCenterContext learningCenterContext)
         {
-            _myDbContext = myDbContext;
+            _learningCenterContext = learningCenterContext;
         }
         public async Task<List<Role>> GetRoles()
         {
-            var roles = await _myDbContext.Role.ToListAsync();
+            var roles = await _learningCenterContext.Role.ToListAsync();
             return roles;
         }
 
         public async Task<Role> GetRole(int id)
         {
-            var role = await _myDbContext.Role.SingleOrDefaultAsync(x => x.Id == id);
+            var role = await _learningCenterContext.Role.SingleOrDefaultAsync(x => x.Id == id);
+            return role;
+        }
+
+        public async Task<Role> GetRoleByName(string name)
+        {
+            var role = await _learningCenterContext.Role.SingleOrDefaultAsync(x => x.Name == name);
             return role;
         }
 
         public async Task<int> AddRole(Role role)
         {
-            await _myDbContext.Role.AddAsync(role);
-            return await _myDbContext.SaveChangesAsync();
+            await _learningCenterContext.Role.AddAsync(role);
+            return await _learningCenterContext.SaveChangesAsync();
         }
 
         public async Task<int> UpdateRole(Role role)
         {
-            _myDbContext.Role.Update(role);
-            return await _myDbContext.SaveChangesAsync();
+            _learningCenterContext.Role.Update(role);
+            return await _learningCenterContext.SaveChangesAsync();
         }
     
         public async Task<int> DeleteRole(Role role)
         {
-            _myDbContext.Role.Remove(role);
-            return await _myDbContext.SaveChangesAsync();
+            _learningCenterContext.Role.Remove(role);
+            return await _learningCenterContext.SaveChangesAsync();
         }
     }
 }

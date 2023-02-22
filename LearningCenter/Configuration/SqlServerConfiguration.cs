@@ -9,7 +9,7 @@ namespace LearningCenter.Configuration
         {
             var connectionString = configuration["ConnectionStrings:default"];
 
-            services.AddDbContext<MyDbContext>(option =>
+            services.AddDbContext<LearningCenterContext>(option =>
             {
                 option.UseSqlServer(connectionString, x =>
                 {

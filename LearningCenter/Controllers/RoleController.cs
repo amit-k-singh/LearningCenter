@@ -15,28 +15,28 @@ namespace LearningCenter.Controllers
             _roleService = roleService;
         }
 
-        [HttpGet("get-roles")]
+        [HttpGet("roles")]
         public async Task<IActionResult> GetRoles()
         {
             var roles = await _roleService.GetRolesAsync();
             return Ok(roles);
         }
 
-        [HttpPost("add-role")]
-        public async Task<IActionResult> Post(RoleRequestModel roleRequestModel)
+        [HttpPost("role")]
+        public async Task<IActionResult> Post([FromForm] RoleRequestModel roleRequestModel)
         {
             await _roleService.AddRoleAsync(roleRequestModel);
             return Ok("Role Added successfully...");
         }
 
-        [HttpPut("update-role/{id}")]
-        public async Task<IActionResult> Put(int id ,RoleRequestModel roleRequestModel)
+        [HttpPut("roles/{id}")]
+        public async Task<IActionResult> Put(int id , [FromForm] RoleRequestModel roleRequestModel)
         {
             await _roleService.UpdateRoleAsync(id, roleRequestModel);
             return Ok("User updated...");
         }
 
-        [HttpDelete("delete-role/{id}")]
+        [HttpDelete("roles/{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             await _roleService.DeleteRoleAsync(id);
