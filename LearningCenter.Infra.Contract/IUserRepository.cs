@@ -6,6 +6,7 @@ namespace LearningCenter.Infra.Contract
     {
         Task<List<User>> GetUsers();
         Task<User> GetUserById(int id);
+        Task<User> GetUserByEmail(string email);
         Task<int> AddUser(User user);
         Task<int> UpdateUser(User user);
         Task<int> DeleteUser(int id);

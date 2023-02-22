@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LearningCenter.Infra.Domain.Context
 {
-    public class MyDbContext : DbContext
+    public class LearningCenterContext : DbContext
     {
-        public MyDbContext(DbContextOptions options) : base(options)
+        public LearningCenterContext(DbContextOptions options) : base(options)
         {
         }
         public DbSet<User> User { get; set; }

@@ -6,9 +6,9 @@ namespace LearningCenter.Infra.Repository
 {
     public class TechnologyRepository : ITechnologyRepository
     {
-        private readonly MyDbContext _myDbContext;
+        private readonly LearningCenterContext _myDbContext;
 
-        public TechnologyRepository(MyDbContext myDbContext)
+        public TechnologyRepository(LearningCenterContext myDbContext)
         {
             _myDbContext = myDbContext;
         }

@@ -43,7 +43,11 @@ namespace LearningCenter.Core.Service
         {
             try
             {
-
+                var isExiest = await _userRepository.GetUserByEmail(userRequestModel.Email);
+                if (isExiest != null)
+                {
+                    throw new Exception("Email already exiest");
+                }
                 int age = DateTime.Now.Year - userRequestModel.Dob.Year;
                 var user = UserBuilder.Build(userRequestModel, age);
                 var userCount = await _userRepository.AddUser(user);
@@ -52,7 +56,6 @@ namespace LearningCenter.Core.Service
                 {
                     throw new Exception("User not added...!!!");
                 }
-
                 return userCount;
             }
             catch (Exception)
