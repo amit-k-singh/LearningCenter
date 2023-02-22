@@ -22,7 +22,7 @@ namespace LearningCenter.Controllers
             return Ok(users);
         }
 
-        [HttpGet("get-user/{id}")]
+        [HttpGet("get-users/{id}")]
         public async Task<IActionResult> GetUser(int id)
         {
             var user = await _userService.GetUserByIdAsync(id); 
@@ -36,14 +36,14 @@ namespace LearningCenter.Controllers
             return Ok("User added successfully...");
         }
 
-        [HttpPut("update-user/{id}")]
+        [HttpPut("update-users/{id}")]
         public async Task<IActionResult> Put(int id, UserRequestModel userRequestModel)
         {
             await _userService.UpdateUserAsync(userRequestModel, id);
             return Ok("User updated Successfully...");
         }
 
-        [HttpDelete("delete-user/{id}")]
+        [HttpDelete("delete-users/{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             await _userService.DeleteUserAsync(id);
