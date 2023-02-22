@@ -9,6 +9,7 @@ namespace LearningCenter.Configuration
         public AutoMapperProfile() 
         {
             CreateMap<User, UserResponseModel>();
+            CreateMap<Role, RoleResponseModel>();
         }
     }
 }

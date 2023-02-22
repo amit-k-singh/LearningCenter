@@ -3,12 +3,7 @@ using LearningCenter.Core.Builder;
 using LearningCenter.Core.Contract;
 using LearningCenter.Core.Domain.RequestModel;
 using LearningCenter.Core.Domain.ResponseModel;
-using LearningCenter.Infra.Repesitory;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using LearningCenter.Infra.Contract;
 
 namespace LearningCenter.Core.Service
 {

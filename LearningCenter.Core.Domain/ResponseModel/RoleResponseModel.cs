@@ -1,21 +1,14 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearningCenter.Infra.Domain.Entities
+namespace LearningCenter.Core.Domain.ResponseModel
 {
-    public class Role
+    public class RoleResponseModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
-
-        public Role() { }
-
-        public Role(string name) 
-        { 
-            Name= name;
-        }
     }
 }

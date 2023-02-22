@@ -1,6 +1,6 @@
 ﻿using LearningCenter.Infra.Domain.Entities;
 
-namespace LearningCenter.Infra.Repesitory
+namespace LearningCenter.Infra.Contract
 {
     public interface IUserRepository
     {

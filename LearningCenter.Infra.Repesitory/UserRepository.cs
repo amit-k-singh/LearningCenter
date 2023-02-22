@@ -1,13 +1,9 @@
-﻿using LearningCenter.Infra.Domain.Context;
+﻿using LearningCenter.Infra.Contract;
+using LearningCenter.Infra.Domain.Context;
 using LearningCenter.Infra.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace LearningCenter.Infra.Repesitory;
+namespace LearningCenter.Infra.Repository;
 
 public class UserRepository : IUserRepository
 {
@@ -49,10 +45,6 @@ public class UserRepository : IUserRepository
     public async Task<int> DeleteUser(int id)
     {
         var user = await _myDbContext.User.SingleOrDefaultAsync(x =>x.Id == id);
-        if (user == null)
-        {
-            throw new NullReferenceException("User not exiest...!!!");
-        }
         _myDbContext.User.Remove(user);
         return await _myDbContext.SaveChangesAsync();
     }
